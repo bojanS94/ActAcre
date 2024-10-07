@@ -1,0 +1,1 @@
+{"mappings":"AAKA;;;;;;AAMA","sources":["css/style.css"],"sourcesContent":["@import './header.css';\r\n@import './slider.css';\r\n@import './accordion.css';\r\n\r\n\r\nbody {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\np {\r\n  margin-bottom: 0;\r\n}"],"names":[],"version":3,"file":"index.b2625c6b.css.map","sourceRoot":"/__parcel_source_root/"}

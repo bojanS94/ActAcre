@@ -1,0 +1,14 @@
+@import './header.css';
+@import './slider.css';
+@import './accordion.css';
+
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0;
+}
