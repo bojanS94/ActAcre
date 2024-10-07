@@ -8,12 +8,25 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #4D4D4D;
 }
 
 p {
   margin-bottom: 0;
+  color: #948282;
+}
+
+a {
+  color: #948282;
+  text-decoration: none;
 }
 
 img {
   width: 100%;
+}
+
+.main-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }

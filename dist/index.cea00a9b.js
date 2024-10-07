@@ -1,24 +1,18 @@
 $(document).ready(function() {
-    //Increase decrease function
     let quantity = 1;
-    // Increase quantity
     $("#increase-btn").click(function() {
         quantity++;
         $("#quantity").text(quantity);
     });
-    // Decrease quantity
     $("#decrease-btn").click(function() {
         if (quantity > 1) {
             quantity--;
             $("#quantity").text(quantity);
         }
     });
-    //Accordion logic
     $(".accordion-header").click(function() {
-        // Close all other accordions
         $(".accordion-content").slideUp();
         $(".toggle-icon").text("+");
-        // Toggle the current one
         if ($(this).next(".accordion-content").is(":visible")) {
             $(this).next(".accordion-content").slideUp();
             $(this).find(".toggle-icon").text("+");
