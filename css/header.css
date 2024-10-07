@@ -1,0 +1,40 @@
+.main-header {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo-wrapper {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo-wrapper img {
+  max-width: 80px;
+}
+
+.nav-items-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items-list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.user-control-nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}

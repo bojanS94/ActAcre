@@ -1,14 +1,19 @@
 @import './header.css';
-@import './slider.css';
+@import './carousel.css';
 @import './accordion.css';
-
+@import './product.css';
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
   margin-bottom: 0;
+}
+
+img {
+  width: 100%;
 }

@@ -1,10 +1,267 @@
+.main-header {
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+}
+
+.logo-wrapper {
+  justify-content: start;
+  align-items: center;
+  width: 25%;
+  display: flex;
+}
+
+.logo-wrapper img {
+  max-width: 80px;
+}
+
+.nav-items-wrapper {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  display: flex;
+}
+
+.nav-items-list {
+  gap: 15px;
+  list-style: none;
+  display: flex;
+}
+
+.user-control-nav {
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+  display: flex;
+}
+
+.carousel-wrapper {
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.carousel-container {
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  transition: transform .5s ease-in-out;
+  display: flex;
+}
+
+.product {
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 33.33%;
+  padding: 20px;
+}
+
+.product img {
+  border-radius: 5px;
+  width: 100px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.prev-btn, .next-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.accordion-container {
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.accordion-header {
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+}
+
+.accordion-content {
+  padding: 10px;
+  font-size: 16px;
+  display: none;
+}
+
+.toggle-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.breadcrumb ul {
+  gap: 10px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.radio-container {
+  cursor: pointer;
+  color: #333;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  font-size: 18px;
+  display: block;
+  position: relative;
+}
+
+.radio-container input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.checkmark {
+  background-color: #fff;
+  border: 2px solid #b5a89d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #a5907e;
+  border-color: #a5907e;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.quantity-selector {
+  display: flex;
+}
+
+.quantity-container {
+  text-align: center;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.quantity-btn {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+#quantity {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.add-to-cart {
+  color: #333;
+  cursor: pointer;
+  background-color: #bfabab;
+  border: none;
+  padding: 15px 40px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  transition: all .3s;
+}
+
+.add-to-cart:hover {
+  color: #fff;
+  background-color: #706760;
+}
+
+.image-desc-wrapper {
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.image-left {
+  max-width: 600px;
+}
+
+.ingredients-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin: 20px auto;
+  display: grid;
+}
+
+.ingredient {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.ingredient img {
+  max-width: 50px;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Poppins, sans-serif;
 }
 
 p {
   margin-bottom: 0;
+}
+
+img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.b2625c6b.css.map */
