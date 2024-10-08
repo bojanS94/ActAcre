@@ -2,6 +2,9 @@
 @import './carousel.css';
 @import './accordion.css';
 @import './product.css';
+@import './sidebar.css';
+@import './mobile-nav.css';
+@import './responsive.css';
 
 body {
   padding: 0;

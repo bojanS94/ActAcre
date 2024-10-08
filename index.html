@@ -15,6 +15,12 @@
 
 <body>
   <header class="main-header">
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
     <div class="logo-wrapper">
       <img src="/images/icons/main-logo.svg" alt="">
     </div>
@@ -34,11 +40,22 @@
       <div class="user-control-nav-item">
         <img src="images/icons/profile.svg" alt="" class="user-control-icon">
       </div>
-      <div class="user-control-nav-item">
+      <div class="user-control-nav-item open-cart">
         <img src="images/icons/shop.svg" alt="" class="user-control-icon">
       </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-items">
+      <li class="mobile-nav-item"><a href="">Shop</a></li>
+      <li class="mobile-nav-item"><a href="">Science</a></li>
+      <li class="mobile-nav-item"><a href="">Press</a></li>
+      <li class="mobile-nav-item"><a href="">Blogs</a></li>
+      <li class="mobile-nav-item"><a href="">Tutorial</a></li>
+    </ul>
+  </nav>
 
   <section class="main-content">
     <!-- Image and description -->
@@ -122,7 +139,7 @@
               <button class="quantity-btn" id="increase-btn">+</button>
             </div>
 
-            <button class="add-to-cart">ADD TO CART</button>
+            <button class="add-to-cart open-cart">ADD TO CART</button>
           </div>
         </div>
       </div>
@@ -132,37 +149,37 @@
       <div class="carousel-container">
         <div class="carousel">
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <img src="/images/product/carousel-product.jpg" alt="Product 1">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
           </div>
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <img src="/images/product/carousel-product.jpg" alt="Product 2">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
           </div>
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <img src="/images/product/carousel-product.jpg" alt="Product 3">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
           </div>
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 4">
+            <img src="/images/product/carousel-product.jpg" alt="Product 4">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
           </div>
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 5">
+            <img src="/images/product/carousel-product.jpg" alt="Product 5">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
           </div>
           <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 6">
+            <img src="/images/product/carousel-product.jpg" alt="Product 6">
             <h3>HAND POMADE / POMMADE MAINS</h3>
             <p>Nourishment for your hands</p>
             <p><strong>159,00 KR</strong></p>
@@ -173,6 +190,21 @@
       </div>
     </div>
   </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-sidebar-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart" class="close-cart-btn">&times;</button>
+    </div>
+    <div class="cart-sidebar-content">
+      <p>No items in your cart.</p>
+    </div>
+    <div class="cart-sidebar-footer">
+      <h3>Total Quantity: <span id="total-quantity">0</span></h3>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
 
   <!-- scripts -->
   <script src="js/app.js"></script>

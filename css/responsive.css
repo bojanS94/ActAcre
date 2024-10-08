@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+  .image-desc-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 771px) {
+  .product {
+    flex: 0 0 50%;
+    /* Prikazuje 2 stavke po redu */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    flex: 0 0 100%;
+    /* Prikazuje 1 stavku po redu */
+  }
+}

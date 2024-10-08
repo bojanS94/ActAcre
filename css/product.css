@@ -2,6 +2,7 @@
   display: inline-flex;
   list-style: none;
   gap: 10px;
+  padding: 0;
 }
 
 .radio-container {
@@ -99,6 +100,7 @@
 .image-desc-wrapper {
   max-width: 1200px;
   margin: 20px auto;
+  padding: 15px;
   width: 100%;
   display: flex;
   gap: 20px;
@@ -107,8 +109,6 @@
 .image-left {
   max-width: 600px;
 }
-
-.product-details {}
 
 .ingredients-grid {
   display: grid;

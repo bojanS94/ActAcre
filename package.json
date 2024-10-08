@@ -1,17 +1,16 @@
 {
-  "name": "actacre",
-  "version": "1.0.0",
-  "main": "index.js",
-  "source": "index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "parcel": "^2.12.0"
-  }
+    "name": "actacre",
+    "version": "1.0.0",
+    "source": "index.html",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "parcel": "^2.12.0"
+    }
 }

@@ -26,8 +26,7 @@
 }
 
 .product img {
-  width: 100px;
-  height: 150px;
+  max-width: 360px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -35,10 +34,11 @@
 .prev-btn,
 .next-btn {
   position: absolute;
+  font-size: 45px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #000;
-  color: #fff;
+  background-color: transparent;
+  color: #4D4D4D;
   border: none;
   padding: 10px;
   cursor: pointer;

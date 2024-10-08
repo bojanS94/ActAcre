@@ -2,7 +2,8 @@
   display: flex;
   margin: 0 auto;
   padding: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
 }
@@ -37,4 +38,8 @@
   align-items: center;
   justify-content: end;
   gap: 10px;
+}
+
+.user-control-nav-item {
+  cursor: pointer;
 }
