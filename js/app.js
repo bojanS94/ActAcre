@@ -1,54 +1,75 @@
-$(document).ready(function () {
-
+document.addEventListener('DOMContentLoaded', () => {
   let quantity = 1;
 
-  $('#increase-btn').click(function () {
+  const increaseBtn = document.getElementById('increase-btn');
+  const decreaseBtn = document.getElementById('decrease-btn');
+  const quantityDisplay = document.getElementById('quantity');
+  
+  increaseBtn.addEventListener('click', () => {
     quantity++;
-    $('#quantity').text(quantity);
+    quantityDisplay.textContent = quantity;
   });
 
-  $('#decrease-btn').click(function () {
+  decreaseBtn.addEventListener('click', () => {
     if (quantity > 1) {
       quantity--;
-      $('#quantity').text(quantity);
+      quantityDisplay.textContent = quantity;
     }
   });
 
-  $('.accordion-header').click(function () {
-    $('.accordion-content').slideUp();
-    $('.toggle-icon').text('+');
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const allContents = document.querySelectorAll('.accordion-content');
+      const allIcons = document.querySelectorAll('.toggle-icon');
 
-    if ($(this).next('.accordion-content').is(':visible')) {
-      $(this).next('.accordion-content').slideUp();
-      $(this).find('.toggle-icon').text('+');
-    } else {
-      $(this).next('.accordion-content').slideDown();
-      $(this).find('.toggle-icon').text('-');
-    }
+      // Close all accordion contents and reset icons
+      allContents.forEach(content => content.style.display = 'none');
+      allIcons.forEach(icon => icon.textContent = '+');
+
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('.toggle-icon');
+
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        icon.textContent = '+';
+      } else {
+        content.style.display = 'block';
+        icon.textContent = '-';
+      }
+    });
   });
 
   let currentIndex = 0;
-  let itemWidth = $('.carousel .product').outerWidth(true);
-  let visibleItems = 3;
-  let itemCount = $('.carousel .product').length;
+  const carousel = document.querySelector('.carousel');
+  const products = document.querySelectorAll('.carousel .product');
+  const itemWidth = products[0].offsetWidth + parseInt(getComputedStyle(products[0]).marginRight);
+  const visibleItems = 3;
+  const itemCount = products.length;
 
-  // Prev button
-  $('.prev-btn').click(function () {
+  // Update carousel transform
+  const updateCarousel = () => {
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  };
+
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  prevBtn.addEventListener('click', () => {
     if (currentIndex > 0) {
       currentIndex--;
     } else {
       currentIndex = itemCount - visibleItems;
     }
-    $('.carousel').css('transform', 'translateX(' + (-currentIndex * itemWidth) + 'px)');
+    updateCarousel();
   });
 
-  // Next button
-  $('.next-btn').click(function () {
+  nextBtn.addEventListener('click', () => {
     if (currentIndex < itemCount - visibleItems) {
       currentIndex++;
     } else {
       currentIndex = 0;
     }
-    $('.carousel').css('transform', 'translateX(' + (-currentIndex * itemWidth) + 'px)');
+    updateCarousel();
   });
 });
